@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+<div id="mySidepanel" class="sidepanel">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+  <a href="#">Soon To Be Calculator</a>
+</div>
+
+<button class="openbtn" onclick="openNav()">&#9776; Toggle Calculator</button>
+
+    <div id="main"><!-- open main div -->
+      <div id="header"><!-- open header div -->
+      <h1>High School Math Quiz</h1>
+    </div><!-- close header div -->
+
+    <form id="form1">
+
+<h2>What is the degree of 7x + 1?</h2>
+<label for="var_string"><input type="radio" name="variable" value="0" id="var_string" />0</label>
+<label for="var_join"><input type="radio" name="variable" value="20" id="var_join" />1</label>
+<label for="var_info"><input type="radio" name="variable" value="0" id="var_info" />7</label>
+<label for="var_condition"><input type="radio" name="variable" value="0" id="var_condition"/>2</label>
+
+<h2>What is the solution to the system x + y = 5 and 3x - y = 3?</h2>
+<label for="sub_string"><input type="radio" name="sub" value="0" id="sub_string"/>(-2, -3)</label>
+<label for="sub_join"><input type="radio" name="sub" value="0" id="sub_join"/>(-2, 3)</label>
+<label for="sub_info"><input type="radio" name="sub" value="0" id="sub_info" />(2, -3)</label>
+<label for="sub_condition"><input type="radio" name="sub" value="20" id="sub_condition" />(2, 3))</label>
+
+<h2>What is (x^4)/(x^0)?</h2>
+<label for="cat_string"><input type="radio" name="con" value="0" id="cat_string" />X^3</label>
+<label for="cat_join"><input type="radio" name="con" value="0" id="cat_join" />X^5</label>
+<label for="cat_info"><input type="radio" name="con" value="0" id="cat_info" />X^0</label>
+<label for="cat_condition"><input type="radio" name="con" value="20" id="cat_condition" />X^4</label>
+
+<h2>If the original price of a house is $185,000 and it falls to $160,000, what is the percent decrease?</h2>
+<label for="if_string"><input type="radio" name="ifstate" value="20" id="if_string" />13.51%</label>
+<label for="if_join"><input type="radio" name="ifstate" value="0" id="if_join" />19.82%</label>
+<label for="if_info"><input type="radio" name="ifstate" value="0" id="if_info" />8.51%</label>
+<label for="if_condition"><input type="radio" name="ifstate"  value="0" id="if_condition" />25.01%</label>
+<!--
+https://codeactually.com/interactivequiz.html
+
+https://www.proprofs.com/quiz-school/quizshow.php?title=pp-high-school-math-exam&q=5
+https://www.proprofs.com/quiz-school/story.php?title=pp-high-school-math-trivia
+https://www.proprofs.com/quiz-school/story.php?title=pp-high-school-math-quiz
+https://www.proprofs.com/quiz-school/story.php?title=pp-ultimate-high-school-math-trivia
+https://www.proprofs.com/quiz-school/story.php?title=pp-math-quiz-for-high-school
+
+https://www.buzzfeed.com/evelinamedina/can-you-ace-this-high-school-math-quiz
+
+https://www.familyeducation.com/quizzes/high-school-math-tests/high-school-math-challenge -->
+<h2>What is (6x^3y^15)/(3xy)?</h2>
+<label for="percent_string"><input type="radio" name="percent" value="0" id="if_string" />2xy^15</label>
+<label for="percent_join"><input type="radio" name="percent" value="0" id="if_join" />2x^3y</label>
+<label for="percent_info"><input type="radio" name="percent" value="0" id="if_info" />2xy</label>
+<label for="percent_condition"><input type="radio" name="perceent"  value="25" id="if_condition" />25.01%</label>
+
+<!-- <h2>If the original price of a house is $185,000 and it falls to $160,000, what is the percent decrease?</h2>
+<label for="if_string"><input type="radio" name="ifstate" value="0" id="if_string" />13.51%</label>
+<label for="if_join"><input type="radio" name="ifstate" value="0" id="if_join" />19.82%</label>
+<label for="if_info"><input type="radio" name="ifstate" value="0" id="if_info" />8.51%</label>
+<label for="if_condition"><input type="radio" name="ifstate"  value="25" id="if_condition" />25.01%</label> -->
+
+<button type="submit" value="Submit" id="btn">Submit</button>
+
+</form>
+
+
+<p>Your grade is: <span id="grade">__</span></p>
+<p id="grade2"></p>
+</div><!-- close main div -->
+    <script src="script.js"></script>
+  </body>
+</html>
